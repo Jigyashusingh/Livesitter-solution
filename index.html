@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Stream Video App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Live Stream Video App</h1>
+    </header>
+    <main>
+        <div class="video-container">
+            <video id="live-stream-video" controls>
+                <source src="" type="application/x-rtsp">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="overlay-form">
+            <h2>Add Custom Overlay</h2>
+            <form id="overlay-form">
+                <label for="overlay-content">Overlay Content:</label>
+                <input type="text" id="overlay-content" required>
+                <label for="overlay-position">Overlay Position:</label>
+                <input type="text" id="overlay-position" required>
+                <label for="overlay-size">Overlay Size:</label>
+                <input type="text" id="overlay-size" required>
+                <button type="submit">Add Overlay</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <!-- Add footer content here -->
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
